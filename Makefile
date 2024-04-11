@@ -1,7 +1,7 @@
 # Image URL to use all building/pushing image targets
 IMG ?= harbor.sail.se.sjtu.edu.cn/kubedtn
-OVS_IMG = $(IMG)/kubedtn-sidecar
-TAG := test-0
+OVS_IMG = $(IMG)/ovs
+TAG := latest
 
 .PHONY: ovs-docker
 ovs-docker:
