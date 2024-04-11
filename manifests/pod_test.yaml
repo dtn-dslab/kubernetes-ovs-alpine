@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ovs-test-pod
+spec:
+  containers:
+  - name: ovs-container
+    image: harbor.sail.se.sjtu.edu.cn/kubedtn/kubedtn-sidecar:test-0
+    securityContext:
+      privileged: true
+      capabilities:
+        add:
+        - NET_ADMIN
+      runAsUser: 0
+      runAsNonRoot: false
