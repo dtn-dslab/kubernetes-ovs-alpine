@@ -8,6 +8,8 @@ The most important point is that OVS is running in the container network namespa
 
 If you need to run OVS in the host network namespace, you can just expose the ovs-db file to the container, and contoller it using ovs-vsctl.
 
+The image is based on alpine, and use supervisord to manage the OVS process.
+
 ## Build OVS image
 
 ```bash
